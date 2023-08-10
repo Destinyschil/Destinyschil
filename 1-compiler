@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Save the C file name in the variable $CFILE
+CFILE=main.c
+
+# Compile the C file but do not link, and save the output to a .o file
+gcc -c "$CFILE" -o "${CFILE%.c}.o"
+
+
