@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Set the C file name
+CFILE=main.c
+
+# Generate the assembly code and save it to a file
+gcc -S $CFILE -o ${CFILE%.c}.s
+
+
